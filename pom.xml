@@ -39,7 +39,8 @@
 				<goals>
 				<goal>instrument</goal>
 				</goals>
-			</execution>
+				</execution>
+			</executions>
 		
 			</plugin>
 		
