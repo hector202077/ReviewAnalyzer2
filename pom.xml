@@ -23,6 +23,8 @@
 				<groupId>com.atlassian.maven.plugins</groupId>
 				<artifactId>clover-maven-plugin</artifactId>
 			</plugin>
+		</plugins>
+
 			<configuration>
 		
 			<generatePdf>true</generatePdf>
@@ -41,7 +43,7 @@
 			</execution>
 		</executions>
 
-		</plugins>
+
 	</build>
 
 	
