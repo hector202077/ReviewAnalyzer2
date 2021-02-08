@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.2</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.sixdot3DemoTwo</groupId>
+	<artifactId>ReviewAnalyzer2</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ReviewAnalyzer2</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.atlassian.maven.plugins</groupId>
+				<artifactId>clover-maven-plugin</artifactId>
+			</plugin>
+		<configuration>
+		
+			<generatePdf>true</generatePdf>
+			<generateXml>true</generateXml>
+			<genereateHtml>false</generateHtml>
+			<generateJson>false</generateJson>
+
+		</configuration>
+
+		<executions>
+			<execution>
+				<phase>generate-sources</phase>
+			<goals>
+				<goal>instrument</goal>
+			</goals>
+			</execution>
+		</executions>
+
+		</plugins>
+	</build>
+
+	
+</project>
