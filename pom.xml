@@ -28,7 +28,7 @@
 		
 				<generatePdf>true</generatePdf>
 				<generateXml>true</generateXml>
-				<genereateHtml>false</generateHtml>
+				<generateHtml>false</generateHtml>
 				<generateJson>false</generateJson>
 
 			</configuration>
